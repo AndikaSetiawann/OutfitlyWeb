@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AiActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Chat Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chatContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/examplesContainer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- RecyclerView Chat -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/typingIndicator" />
+
+            <!-- Typing Indicator -->
+            <LinearLayout
+                android:id="@+id/typingIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_message_bot"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/messageInputLayout">
+
+                <View
+                    android:id="@+id/dot1"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/dot_shape" />
+
+                <View
+                    android:id="@+id/dot2"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/dot_shape" />
+
+                <View
+                    android:id="@+id/dot3"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/dot_shape" />
+            </LinearLayout>
+
+            <!-- Message Input Layout -->
+            <LinearLayout
+                android:id="@+id/messageInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <EditText
+                    android:id="@+id/messageEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="Tanyakan rekomendasi outfit..."
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:maxLines="4"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textCursorDrawable="@null" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send"
+                    android:contentDescription="Kirim"
+                    app:backgroundTint="@color/primary"
+                    app:tint="@android:color/white" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Examples Section -->
+    <LinearLayout
+        android:id="@+id/examplesContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/examplesHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Coba tanya tentang:"
+            android:textColor="@color/dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start"
+            app:alignItems="center">
+
+            <TextView
+                android:id="@+id/example1"
+                style="@style/ExampleChip"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Outfit ke kampus" />
+
+            <TextView
+                android:id="@+id/example2"
+                style="@style/ExampleChip"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Outfit wawancara kerja" />
+
+            <TextView
+                android:id="@+id/example3"
+                style="@style/ExampleChip"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Outfit musim dingin" />
+
+            <TextView
+                android:id="@+id/example4"
+                style="@style/ExampleChip"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Outfit ke pantai" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

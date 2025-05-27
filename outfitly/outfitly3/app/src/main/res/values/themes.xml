@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Outfitly" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryVariant">#E64A19</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF9800</item>
+        <item name="colorSecondaryVariant">#E65100</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Style untuk HomeActivity -->
+    <style name="AppTheme" parent="Theme.Outfitly">
+        <!-- Tambahan kustomisasi khusus untuk HomeActivity jika diperlukan -->
+    </style>
+</resources>

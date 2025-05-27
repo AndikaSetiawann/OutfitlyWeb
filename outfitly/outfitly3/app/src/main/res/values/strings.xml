@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Outfitly</string>
+    <string name="app_logo">Outfitly Logo</string>
+
+    <!-- Authentication -->
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="name_hint">Your Name</string>
+    <string name="email_hint">Your Email</string>
+    <string name="password_hint">Your Password</string>
+
+    <!-- Profile -->
+    <string name="profile_picture">Profile Picture</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="user_id">User ID</string>
+
+    <!-- Wardrobe -->
+    <string name="wardrobe">Wardrobe</string>
+    <string name="add_item">Add Item</string>
+
+    <!-- AI Feature -->
+    <string name="ai_feature">AI Feature</string>
+    <string name="generate_outfit">Generate Outfit</string>
+
+    <!-- General Actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Messages -->
+    <string name="logout_successful">Logout successful</string>
+    <string name="error_occurred">An error occurred</string>
+
+</resources>

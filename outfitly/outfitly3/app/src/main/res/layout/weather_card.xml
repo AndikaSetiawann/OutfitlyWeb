@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvWeatherTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Weather"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWeatherInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunny, 28°C"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnGetTodayOutfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Today's Outfit"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
