@@ -1,0 +1,35 @@
+# 👗 Outfitly 3
+
+## 👥 Anggota Kelompok
+
+| Nama Lengkap           | NIM         |
+|------------------------|-------------|
+| Andika Setiawan        | 312310XXX   |
+| Carlos Louis F         | 312310XXX   |
+| Afryandhinar R.P       | 312310XXX   |
+
+---
+
+## 📝 Deskripsi Aplikasi
+
+Outfitly 3 adalah aplikasi web yang dirancang untuk membantu pengguna dalam mengatur dan memilih outfit harian mereka dengan mudah dan efisien. Aplikasi ini menawarkan antarmuka yang intuitif dan fitur-fitur canggih untuk meningkatkan pengalaman pengguna dalam merencanakan pakaian mereka.
+
+---
+
+## ✨ Fitur Aplikasi
+
+- **Manajemen Outfit**: Tambah, edit, dan hapus outfit sesuai kebutuhan pengguna.
+- **Katalog Pakaian**: Simpan dan kelola koleksi pakaian digital Anda.
+- **Rekomendasi Berdasarkan Cuaca**: Outfitly memberikan saran outfit berdasarkan kondisi cuaca harian.
+- **Kalender Outfit**: Fitur kalender untuk menjadwalkan outfit setiap harinya.
+- **Statistik & Riwayat**: Lihat statistik outfit dan histori penggunaan untuk referensi.
+
+---
+
+## 🛠 Teknologi yang Digunakan
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Autentikasi**: JSON Web Token (JWT)
+- **API Cuaca**: OpenWeatherMap
