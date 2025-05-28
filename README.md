@@ -25,11 +25,3 @@ Outfitly 3 adalah aplikasi web yang dirancang untuk membantu pengguna dalam meng
 - **Statistik & Riwayat**: Lihat statistik outfit dan histori penggunaan untuk referensi.
 
 ---
-
-## 🛠 Teknologi yang Digunakan
-
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Autentikasi**: JSON Web Token (JWT)
-- **API Cuaca**: OpenWeatherMap
