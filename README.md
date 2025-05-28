@@ -4,9 +4,9 @@
 
 | Nama Lengkap           | NIM         |
 |------------------------|-------------|
-| Andika Setiawan        | 312310XXX   |
-| Carlos Louis F         | 312310XXX   |
-| Afryandhinar R.P       | 312310XXX   |
+| Andika Setiawan        | 312310470   |
+| Carlos Louis F         | 312310458   |
+| Afryandhinar R.P       | 312310467   |
 
 ---
 
